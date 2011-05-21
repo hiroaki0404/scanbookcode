@@ -1,0 +1,15 @@
+application: scanbookcode
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /setup
+  static_dir: setup
+
+- url: /usage
+  static_dir: usage
+
+- url: /.*
+  script: scanbookcode.py
+  login: required
