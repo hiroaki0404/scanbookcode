@@ -2,10 +2,38 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="./site.css" type="text/css" />
 <title>ScanBookCode</title>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-306762-9']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_setDomainName', '_scanbookcode_appspot_com']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  // enable the APNIC IPProtoTest and feed google analytics events
+  if ('http:' == document.location.protocol) {
+   var ipproto_user = '567191';
+   (function() {
+    var iga = document.createElement('script'); iga.type = 'text/javascript'; iga.async = true;
+    iga.src = 'http://labs.apnic.net/ipprototest.js';
+    var is = document.getElementsByTagName('script')[0]; is.parentNode.insertBefore(iga, is);
+   })();
+  }
+</script>
 </head>
 <body>
-	<h1>Store book's ISBN code</h1>
+<div align="right">
+<script src="http://trackfeed.com/usr/557d020ea3.js" type="text/javascript"></script>
+</div>
+	<h1>Store book's ISBN code<script type="text/javascript" src="http://apis.google.com/js/plusone.js">
+  {lang: 'ja'}
+</script>
+</h1>
 Androidの<a href="http://www.appbrain.com/app/barcode-scanner/com.google.zxing.client.android" target="_blank">Barcode Scanner(QRコードスキャナー)</a>
 でスキャンした書籍のISBNコードを蓄積します。<br />
 蓄積したコードは一覧表示できますので、他のアプリケーションで取りこんで利用することが可能です。<br />
@@ -21,6 +49,7 @@ Androidの<a href="http://www.appbrain.com/app/barcode-scanner/com.google.zxing.
 <li><a href="/v">登録データ参照</a></li>
 <li><a href="/d">登録データ削除</a></li>
 </ul>
+<script type="text/javascript" src="http://metric.inetcore.com/46meter/46meter.js?s=scanbookcode.appspot.com"></script>
 <img src="setup/image/email.png" alt="email address" width="220" hight="64" align="right" />
 </body>
 </html>
